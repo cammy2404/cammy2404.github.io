@@ -33,7 +33,7 @@ const data = {
             "ref": "andy",
             "name": "Andy",
             "image": "../images/artists/andy.jpg",
-            "about": "",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
             "mainStyle": "Illistration",
             "shop": "Bank Street Tattoo",
             "shopRef": "bankStreetTattoo",
@@ -44,13 +44,60 @@ const data = {
             "facebook": "",
             "facebookLink": "",
             "website": "andymc.bigcartel.com",
-            "websiteLink": "https://andymc.bigcartel.com/"
+            "websiteLink": "https://andymc.bigcartel.com/",
+            "topImages": [
+                {
+                    "path": "../images/artists/andy.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/artists/graham.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/bankStreet.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/artists/andy.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/artists/andy.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/artists/andy.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/artists/andy.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/artists/andy.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                },
+                {
+                    "path": "../images/artists/andy.jpg",
+                    "style": "Illistration",
+                    "duration": "2"
+                }
+            ]
         },
         {
             "ref": "graham",
             "name": "Graham",
             "image": "../images/artists/graham.jpg",
-            "about": "",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
             "mainStyle": "Illistration",
             "shop": "Bank Street Tattoo",
             "shopRef": "bankStreetTattoo",
@@ -61,7 +108,80 @@ const data = {
             "facebook": "",
             "facebookLink": "",
             "website": "eleven13design.bigcartel.com",
-            "websiteLink": "https://eleven13design.bigcartel.com/"
+            "websiteLink": "https://eleven13design.bigcartel.com/",
+            "topImages": []
+        },
+        {
+            "ref": "dawid",
+            "name": "Dawid",
+            "image": "../images/bankStreet.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Realism",
+            "shop": "Bank Street Tattoo",
+            "shopRef": "bankStreetTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@tattoos_by_dave_d",
+            "instaLink": "https://www.instagram.com/tattoos_by_dave_d/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "topImages": []
+        },
+        {
+            "ref": "hannahdanana",
+            "name": "Hannah",
+            "image": "../images/bankStreet.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Kawaii",
+            "shop": "Bank Street Tattoo",
+            "shopRef": "bankStreetTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@hannahdanana_tattoo",
+            "instaLink": "https://www.instagram.com/hannahdanana_tattoo/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "hannahdanana.bigcartel.com",
+            "websiteLink": "https://hannahdanana.bigcartel.com/",
+            "topImages": []
+        },
+        {
+            "ref": "mike",
+            "name": "Mike",
+            "image": "../images/bankStreet.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Realism",
+            "shop": "Bank Street Tattoo",
+            "shopRef": "bankStreetTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@mike_myers_tattoo",
+            "instaLink": "https://www.instagram.com/mike_myers_tattoo/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "topImages": []
+        },
+        {
+            "ref": "jamie",
+            "name": "Jamie",
+            "image": "../images/bankStreet.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Illistration",
+            "shop": "Bank Street Tattoo",
+            "shopRef": "bankStreetTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@tidlin",
+            "instaLink": "https://www.instagram.com/tidlin/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "topImages": []
         }
     ]
 }
@@ -167,7 +287,7 @@ function formatArtist(text, i) {
 
     text += '</div><div class="col"><div>'
 
-    text += '<p><b>Name:</b> <a href=' + artistUrl + '>' + data.artists[i].name + '</a></p>'
+    text += '<h2><b><a href=' + artistUrl + '>' + data.artists[i].name + '</a></b></h2>'
     text += '<p>' + data.artists[i].about + '</p>'
     text += '<p><b>Main Style:</b> ' + data.artists[i].mainStyle + '</p>'
     text += '<p><b>Shop:</b> ' + data.artists[i].shop + '</p>'
@@ -179,7 +299,17 @@ function formatArtist(text, i) {
     text += '<p><b>Facebook:</b> <a href=' + data.artists[i].facebookLink + '> ' + data.artists[i].facebook + '</a></p>'
     text += '<p><b>Website:</b> <a href=' + data.artists[i].websiteLink + '> ' + data.artists[i].website + '</a></p>'
 
-    text += '</div></div></div></div>'
+    text += '</div></div></div>'
+    
+    if (data.artists[i].topImages.length >= 3) {
+        text += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
+        text += '<h3 style="text-align: center;">Top Pieces</h3>'
+        text += '</div>'
+
+        text += addTopImages(i, 1);
+    }
+
+    text += '</div>'
 
     return text;
 }
@@ -194,25 +324,59 @@ function displaySingleArtist(ref, shopRef) {
 
     console.log(pos);
 
-    // let text = "";
-    // text += '<div class="container" style="padding-bottom: 15px;">'
-    // text += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
-    // text += '<div class="col-md-12">'
-    // text += '<img src="' + data.shops[pos].image + '" class="rounded mx-auto d-block" alt="Image of artist" style="width: 100%; height: auto; max-width: 500px;">'
-    // text += '</div></div>'
-    // text += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
-    // text += '<h2 style="text-align: center;"><b>' + data.shops[pos].name + '</b></h2></div>'
-    // text += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
-    // text += '<div class="col-md-4"><div>'
-    // text += '<p><b>About:</b> ' + data.shops[pos].about + '</p>'
-    // text += '<p><b>Opening Times:</b> ' + data.shops[pos].openingTimes + '</p>'
-    // text += '<p><b>Price Range:</b> ' + data.shops[pos].priceRange + '</p>'
-    // text += '<p><b>Address:</b> ' + data.shops[pos].address + '</p>'
-    // text += '</div></div>'
-    // text += '<div class="col"><div>'
-    // text += '<div id="artists" class="container">'
-    // text += displayArtistsFromShop(shopRef);
-    // text += '</div></div></div></div></div>'
+    text = "";
+    text += '<div class="container" style="padding-bottom: 15px;">'
+    text += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
+    text += '<div class="col-md-12">'
+    text += '<img src="' + data.artists[pos].image + '" class="rounded mx-auto d-block" alt="Image of artist" style="width: 100%; height: auto; max-width: 500px;">'
+    text += '</div></div>'
+    text += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
+    text += '<h2 style="text-align: center;"><b> ' + data.artists[pos].name + '</b></h2></div>'
+    text += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
+    text += '<div class="col-md-6"><div>'
+    text += '<p><b>About:</b> ' + data.artists[pos].about + '</p>'
+    text += '<p><b>Main Style:</b> ' + data.artists[pos].mainStyle + '</p>'
 
-    // document.getElementById("shops").innerHTML = text;
+    let shopLink = "singleShop.html?ref=" + data.artists[pos].shopRef;
+    text += '<p><b>Shop:</b> <a href="' + shopLink + '">' + data.artists[pos].shop + '</p>'
+    text += '</div></div><div class="col"><div>'
+    text += '<p><b>Instagram:</b> <a href="' + data.artists[pos].instaLink + '">' + data.artists[pos].insta + '</a></p>'
+    text += '<p><b>Facebook:</b> <a href="' + data.artists[pos].facebookLink + '">' + data.artists[pos].facebook + '</a></p>'
+    text += '<p><b>Website:</b> <a href="' + data.artists[pos].websiteLink + '">' + data.artists[pos].website + '</a></p>'
+    text += '</div></div></div>'
+    
+    if (data.artists[pos].topImages.length == 9)
+        text += addTopImages(pos, 3);
+    
+    text += '</div>'
+
+    document.getElementById("artists").innerHTML = text;
+}
+
+function addTopImages(pos, rows) {
+    output = "";
+    let i, j;
+    for (i = 0; i < rows; i++) {
+        output += '<div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">'
+        
+        let startPoint = i * 3;
+        for (j = startPoint; j < startPoint + 3; j++) {
+            let image = data.artists[pos].topImages[j];
+            output += '<div class="col">'
+            output += formatImage(image.path, image.style, image.duration);
+            output += '</div>'
+        }
+
+        output += '</div>'
+    }
+    return output;
+}
+
+function formatImage(imagePath, style, duration) {
+    output = "";
+    output += '<img src="' + imagePath + '" class="rounded mx-auto d-block" alt="Image of artist" style="width: 100%; height: auto; max-width: 500px;">'
+    output += '<div style="text-align: center">'
+    output += '<p><b>Style:</b> ' + style + '</p>'
+    output += '<p><b>Time:</b> ' + duration + ' Hours </p></div>'
+    return output;
 }

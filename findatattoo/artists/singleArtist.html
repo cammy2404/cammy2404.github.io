@@ -47,82 +47,8 @@
             var url_string = window.location.search; //window.location.href
             const urlParams = new URLSearchParams(url_string);
             console.log(urlParams.get("ref") + " from " + urlParams.get("shopRef"));
-            //displaySingleArtist(urlParams.get("ref"), urlParams.get("shopRef"));
+            displaySingleArtist(urlParams.get("ref"), urlParams.get("shopRef"));
         </script>
-
-        <div class="container" style="padding-bottom: 15px;">
-            <div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">
-                <div class="col-md-12">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-            </div>
-            <div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">
-                <h2 style="text-align: center;"><b> data.artists[pos].name </b></h2>
-            </div>
-            <div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">
-                <div class="col-md-4">
-                    <div>
-                        <p><b>About:</b> data.artists[pos].about </p>
-                        <p><b>Opening Times:</b> data.artists[pos].openingTimes </p>
-                        <p><b>Price Range:</b> data.artists[pos].priceRange </p>
-                        <p><b>Address:</b> data.artists[pos].address </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <div id="artists" class="container">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                    <p><b>Style:</b> Illistration </p>
-                    <p><b>Time:</b> 2Hr </p>
-                </div>
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-            </div>
-            <div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-            </div>
-            <div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-                <div class="col">
-                    <img src="../images/artists/andy.jpg" class="rounded mx-auto d-block" alt="Image of artist"
-                        style="width: 100%; height: auto; max-width: 500px;">
-                </div>
-            </div>
-        </div>
-
-
     </div>
 
     <!-- Site Footer -->
