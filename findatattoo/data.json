@@ -1,0 +1,12 @@
+{
+    "shops": [
+        {
+            "name": "Bank Street Tattoo",
+            "image": "../images/bankStreet.jpg",
+            "about": "Fresh custom tattoo studio in the heart of Dundee offering high quality work at great prices, offering specialisation in numerous styles - catering to all",
+            "openingTimes": "Tues-Sat  11am - 6pm",
+            "priceRange": "££",
+            "address": "19 Bank St, Dundee DD1 1RL"
+        }
+    ]
+}

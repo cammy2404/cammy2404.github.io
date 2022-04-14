@@ -10,14 +10,16 @@
 
     <title>FindATattoo</title>
     <script src="../javascript/populateScreen.js"></script>
+
+    <link rel="stylesheet" href="../css/mystyle.css">
   </head>
-  <body onload="displayArtists()">
+  <body>
     <!-- Site Header -->
     <div class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
-            All Artists
+            All Shops
           </a>
     
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -36,31 +38,14 @@
         </header>
       </div>
 
-      <div id="artists" class="container"></div>
-
-      <!-- <div class="container">
-        <div class="row" style="background-color: rgb(240, 240, 240); padding-top: 10px; padding-bottom: 10px;">
-            <div class="col-md-auto">
-                <img src="images/bankStreet.jpg" class="rounded mx-auto d-block" alt="Image of artist" style="width: 200px; height: 200px;">
-            </div>
-            <div class="col">
-                <div>
-                    <p><b>Name:</b> Andy</p>
-                    <p>Some information here about them</p>
-                    <p><b>Main Style:</b> Illistration</p>
-                    <p><b>Shop:</b> Bank Street Tattoo - Dundee</p>
-                    <p><b>Price Range:</b> ££</p>
-                </div>
-            </div>
-            <div class="col">
-                <div>
-                    <p><b>Instagram:</b> @andy.mc_art</p>
-                    <p><b>Facebook:</b> Andy </p>
-                    <p><b>Website:</b> www.website.com</p>
-                </div>
-            </div>
-        </div>
-      </div> -->
+      <div id="shops" class="container">
+        <script>
+          var url_string = window.location.search; //window.location.href
+          const urlParams = new URLSearchParams(url_string);
+          console.log(urlParams.get("ref"));
+          displaySingleShop(urlParams.get("ref"));
+        </script> 
+      </div>
 
       <!-- Site Footer -->
       <div class="container">
