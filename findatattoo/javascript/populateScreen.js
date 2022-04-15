@@ -17,15 +17,6 @@ const data = {
             "openingTimes": "Tues-Sat  11am - 6pm",
             "priceRange": "££",
             "address": "148 Nethergate, Dundee"
-        },
-        {
-            "ref": "metalurgey",
-            "name": "Metalurgey",
-            "image": "../images/metalurgey.jpg",
-            "about": "We have comfortable surroundings with separate private rooms for both tattooing, piercing and laser tattoo removal. Proudly stocking a wide range of luxury body jewellery",
-            "openingTimes": "Mon-Sat  10am - 5pm",
-            "priceRange": "££",
-            "address": "40 Dock St, Dundee DD1 3DR"
         }
     ],
     "artists": [
@@ -45,6 +36,7 @@ const data = {
             "facebookLink": "",
             "website": "andymc.bigcartel.com",
             "websiteLink": "https://andymc.bigcartel.com/",
+            "email": "",
             "topImages": [
                 {
                     "path": "../images/artists/andy.jpg",
@@ -109,6 +101,7 @@ const data = {
             "facebookLink": "",
             "website": "eleven13design.bigcartel.com",
             "websiteLink": "https://eleven13design.bigcartel.com/",
+            "email": "",
             "topImages": []
         },
         {
@@ -127,6 +120,7 @@ const data = {
             "facebookLink": "",
             "website": "",
             "websiteLink": "",
+            "email": "",
             "topImages": []
         },
         {
@@ -145,6 +139,7 @@ const data = {
             "facebookLink": "",
             "website": "hannahdanana.bigcartel.com",
             "websiteLink": "https://hannahdanana.bigcartel.com/",
+            "email": "",
             "topImages": []
         },
         {
@@ -163,6 +158,7 @@ const data = {
             "facebookLink": "",
             "website": "",
             "websiteLink": "",
+            "email": "",
             "topImages": []
         },
         {
@@ -181,6 +177,121 @@ const data = {
             "facebookLink": "",
             "website": "",
             "websiteLink": "",
+            "email": "",
+            "topImages": []
+        },
+        {
+            "ref": "stephen",
+            "name": "Stephen Kelly",
+            "image": "../images/sancturyTattoo.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Traditional",
+            "shop": "Sanctury Tattoo",
+            "shopRef": "sancturyTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@stephenkelly",
+            "instaLink": "https://www.instagram.com/stephenkelly/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "email": "stephenkellytattooer@gmail.com",
+            "topImages": []
+        },
+        {
+            "ref": "danielle",
+            "name": "Danielle Rose",
+            "image": "../images/sancturyTattoo.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Traditional",
+            "shop": "Sanctury Tattoo",
+            "shopRef": "sancturyTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@daniellerosetattoo",
+            "instaLink": "https://www.instagram.com/daniellerosetattoo/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "email": "",
+            "topImages": []
+        },
+        {
+            "ref": "jaysoos",
+            "name": "Jay Soos",
+            "image": "../images/sancturyTattoo.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Traditional",
+            "shop": "Sanctury Tattoo",
+            "shopRef": "sancturyTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@saysoos",
+            "instaLink": "https://www.instagram.com/jaysoos/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "email": "jhurtleytattoo@gmail.com",
+            "topImages": []
+        },
+        {
+            "ref": "mju",
+            "name": "Mishia Mju",
+            "image": "../images/sancturyTattoo.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Traditional",
+            "shop": "Sanctury Tattoo",
+            "shopRef": "sancturyTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@mjutattoo",
+            "instaLink": "https://www.instagram.com/mjutattoo/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "email": "mjutattoo@gmail.com",
+            "topImages": []
+        },
+        {
+            "ref": "elizabeth",
+            "name": "Elizabeth Stewart",
+            "image": "../images/sancturyTattoo.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Black and Grey",
+            "shop": "Sanctury Tattoo",
+            "shopRef": "sancturyTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@mrsstewtattoo",
+            "instaLink": "https://www.instagram.com/mrsstewtattoo/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "email": "",
+            "topImages": []
+        },
+        {
+            "ref": "olivier",
+            "name": "Olivier",
+            "image": "../images/sancturyTattoo.jpg",
+            "about": "Some general information about the artist can go here, give a sum up of personality and who they are",
+            "mainStyle": "Traditional",
+            "shop": "Sanctury Tattoo",
+            "shopRef": "sancturyTattoo",
+            "shopLink": "",
+            "priceRange": "££",
+            "insta": "@olivier.maximilian",
+            "instaLink": "https://www.instagram.com/olivier.maximilian/",
+            "facebook": "",
+            "facebookLink": "",
+            "website": "",
+            "websiteLink": "",
+            "email": "",
             "topImages": []
         }
     ]
@@ -290,7 +401,9 @@ function formatArtist(text, i) {
     text += '<h2><b><a href=' + artistUrl + '>' + data.artists[i].name + '</a></b></h2>'
     text += '<p>' + data.artists[i].about + '</p>'
     text += '<p><b>Main Style:</b> ' + data.artists[i].mainStyle + '</p>'
-    text += '<p><b>Shop:</b> ' + data.artists[i].shop + '</p>'
+
+    let shopLink = "../shops/singleShop.html?ref=" + data.artists[i].shopRef;
+    text += '<p><b>Shop:</b> <a href="' + shopLink + '">' + data.artists[i].shop + '</p>'
     text += '<p><b>Price Range:</b> ' + data.artists[i].priceRange + '</p>'
 
     text += '</div></div><div class="col"><div>'
@@ -298,6 +411,7 @@ function formatArtist(text, i) {
     text += '<p><b>Instagram:</b> <a href=' + data.artists[i].instaLink + '> ' + data.artists[i].insta + '</a></p>'
     text += '<p><b>Facebook:</b> <a href=' + data.artists[i].facebookLink + '> ' + data.artists[i].facebook + '</a></p>'
     text += '<p><b>Website:</b> <a href=' + data.artists[i].websiteLink + '> ' + data.artists[i].website + '</a></p>'
+    text += '<p><b>Email:</b> <a href=' + data.artists[i].email + '> ' + data.artists[i].email + '</a></p>'
 
     text += '</div></div></div>'
     
@@ -337,12 +451,13 @@ function displaySingleArtist(ref, shopRef) {
     text += '<p><b>About:</b> ' + data.artists[pos].about + '</p>'
     text += '<p><b>Main Style:</b> ' + data.artists[pos].mainStyle + '</p>'
 
-    let shopLink = "singleShop.html?ref=" + data.artists[pos].shopRef;
+    let shopLink = "../shops/singleShop.html?ref=" + data.artists[pos].shopRef;
     text += '<p><b>Shop:</b> <a href="' + shopLink + '">' + data.artists[pos].shop + '</p>'
     text += '</div></div><div class="col"><div>'
     text += '<p><b>Instagram:</b> <a href="' + data.artists[pos].instaLink + '">' + data.artists[pos].insta + '</a></p>'
     text += '<p><b>Facebook:</b> <a href="' + data.artists[pos].facebookLink + '">' + data.artists[pos].facebook + '</a></p>'
     text += '<p><b>Website:</b> <a href="' + data.artists[pos].websiteLink + '">' + data.artists[pos].website + '</a></p>'
+    text += '<p><b>Email:</b> <a href="' + data.artists[pos].email + '">' + data.artists[pos].email + '</a></p>'
     text += '</div></div></div>'
     
     if (data.artists[pos].topImages.length == 9)
