@@ -1,0 +1,106 @@
+<htlm>
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>
+            MyWorkout
+        </title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    MyWorkout
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+                </ul>
+
+                <!-- <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                </div> -->
+            </header>
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <label for="quantity">Number of exercises: </label>
+                <input type="number" id="quantity" min="1" max="99" value="4">
+            </div>
+            <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <button type="button" onclick="generateWarmup()">Generate a warmup!</button>
+            </div>
+            <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <div id="warmupOutput"></div>
+
+                <script>
+                    const warmups = [
+                        "Jumping Jacks",
+                        "Arm Circles",
+                        "Burpees",
+                        "second Plank",
+                        "Push-ups",
+                        "Squats",
+                        "Lunges",
+                        "Crunches",
+                        "Sit Ups",
+                        "second Wall Sit",
+                        "Mountain Climbers"
+                    ]
+                    const repCount = [15, 20, 25, 30, 35, 40]
+                    function generateWarmup() {
+                        let output = "";
+                        for (let i = 0; i < document.getElementById("quantity").value; i++) {
+                            output += "<p>"
+                            output += repCount[Math.floor(Math.random() * repCount.length)] + " "
+                            output += warmups[Math.floor(Math.random() * warmups.length)]
+                            output += "</p>"
+                        }
+                        document.getElementById("warmupOutput").innerHTML = output
+                    }
+                </script>
+            </div>
+        </div>
+
+
+        <!-- Site Footer -->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+                    <span class="text-muted">&copy; 2022 Cammy Co.</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</htlm>
